@@ -2,34 +2,42 @@ package com.HW1;
 
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Task1 {
-    public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите операцию  ");
-        int a  = scanner.nextInt();
-        char c = scanner.next().charAt(0);
-        int b = scanner.nextInt();
+
+    public static void main(String[] args) {
 
 
-        int result = 0;
-        switch(c){
-            case '+':
-                result = a+b;
+
+        String a = (args[1]);
+        int  result ;
+        int b= Integer.parseInt(args[0]);
+        int c=Integer.parseInt(args[2]);
+        switch(a){
+            case "+":
+                result = b+c;
                 break;
-            case '-' :
-                result=a-b;
+            case "-" :
+                result= b-c;
                 break;
-            case '/' :
-                result=a/b;
+            case "/" :
+                result= b/c;
                 break;
-            case '%' :
-                result=a%b;
+            case "%" :
+                result= b%c;
                 break;
             default:
                 System.out.println("Операция была введена неправильно , попробуйте еще раз");
         }
-        System.out.print("Операция равна : "+result);
+        System.out.print("Операция равна : "+a);
+
+
+
+
+
+
+
+
     }
+
 }

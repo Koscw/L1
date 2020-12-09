@@ -21,7 +21,7 @@ public class Tsk3 {
             a = reader.readLine();
             summa +=x;
         }
-        summa +=x;
+
         System.out.println(summa);
 
     }

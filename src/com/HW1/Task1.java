@@ -16,19 +16,19 @@ public class Task1 {
         switch(a){
             case "+":
                 result = b+c;
-                System.out.println(result);
+                System.out.println("= "+result);
                 break;
             case "-" :
                 result= b-c;
-                System.out.println(result);
+                System.out.println("= "+result);
                 break;
             case "/" :
                 result= b/c;
-                System.out.println(result);
+                System.out.println("= "+result);
                 break;
             case "%" :
                 result= b%c;
-                System.out.println(result);
+                System.out.println("= "+result);
                 break;
             default:
                 System.out.println("Операция была введена неправильно , попробуйте еще раз");

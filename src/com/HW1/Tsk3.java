@@ -10,14 +10,15 @@ public class Tsk3 {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int summa = 0;
-        int x = 0;
+
 
 
         String a = "";
 
         String b="stop";
         while(!a.equals(b)){
-            x = reader.read();
+            String q= reader.readLine();
+            Integer x= Integer.parseInt(q);
             a = reader.readLine();
             summa +=x;
         }

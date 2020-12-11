@@ -9,20 +9,21 @@ public class Tsk3 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int summa = 0;
-
-
+        String summa = "";
 
         String q = "";
 
         String b="stop";
         while(!q.equals(b)){
-            q= reader.readLine();
-            Integer x= Integer.parseInt(q);
-            summa +=x;
+
+                q = reader.readLine();
+                if(q!=args[args.length - 1])
+                summa += q + ",";
+
+
         }
 
-        System.out.println(summa);
+        System.out.println(summa+".");
 
     }
     }

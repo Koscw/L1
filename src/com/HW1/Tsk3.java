@@ -13,13 +13,12 @@ public class Tsk3 {
 
 
 
-        String a = "";
+        String q = "";
 
         String b="stop";
-        while(!a.equals(b)){
-            String q= reader.readLine();
+        while(!q.equals(b)){
+            q= reader.readLine();
             Integer x= Integer.parseInt(q);
-            a = reader.readLine();
             summa +=x;
         }
 

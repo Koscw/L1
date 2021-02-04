@@ -7,25 +7,30 @@ import java.io.InputStreamReader;
 
 public class Tsk3 {
     public static void main(String[] args) throws IOException {
-
+        int summa=0;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String summa = "";
 
-        String q = "";
+
+        String q ;
 
         String b="stop";
-        while(!q.equals(b)){
+        while(true){
 
                 q = reader.readLine();
-                if(q!=args[args.length - 1])
-                summa += q + ",";
+                if(q.equals(b) && summa==0){
+                    System.out.println("Вы не ввели числа");
+                    break;
+                }
+                else if(q.equals(b)){
+                    System.out.println("sum: "+summa);
+                    break;
+                }
 
-
+            summa = summa + Integer.parseInt(q);
         }
 
-        System.out.println(summa+".");
-
     }
+
     }
 
 
